@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Белкины запасы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Nunito:wght@600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="stage">
+        <canvas id="game" width="960" height="640" aria-label="Игровое поле"></canvas>
+
+        <div class="hud" id="hud" hidden>
+          <div class="hud-card">
+            <span class="hud-label">Очки</span>
+            <span class="hud-value" id="score">0</span>
+          </div>
+          <div class="hud-center">
+            <h1 class="scene-title">Белкины запасы</h1>
+            <p class="scene-tagline">
+              Помогите белке собрать шишки к зиме. Подставляйте корзинку под
+              катящиеся по веткам шишки.
+            </p>
+          </div>
+          <div class="hud-card">
+            <span class="hud-label">Пропущено</span>
+            <span class="hud-value" id="misses">0</span>
+            <span class="hud-max">из 3</span>
+          </div>
+        </div>
+
+        <div class="hint" id="hint" hidden>
+          <p>Стрелки — перемещайте белку и подставляйте корзинку</p>
+          <div class="play-keys">
+            <span class="key">←</span>
+            <span class="key">↓</span>
+            <span class="key">↑</span>
+            <span class="key">→</span>
+          </div>
+        </div>
+
+        <section class="overlay" id="start-screen">
+          <div class="panel">
+            <p class="eyebrow">Осенняя лесная игра</p>
+            <h1>Белкины запасы</h1>
+            <p class="lead">
+              Помогите белке собрать шишки к зиме. Подставляйте корзинку под
+              катящиеся по веткам шишки.
+            </p>
+            <div class="controls">
+              <p class="controls-title">Управление</p>
+              <div class="keys">
+                <div class="arrows">
+                  <span class="key">↑</span>
+                  <div class="arrow-row">
+                    <span class="key">←</span>
+                    <span class="key">↓</span>
+                    <span class="key">→</span>
+                  </div>
+                </div>
+                <ul class="arrow-legend">
+                  <li><span class="key">↑</span> — перемещение вверх</li>
+                  <li><span class="key">↓</span> — перемещение вниз</li>
+                  <li><span class="key">←</span> — перемещение влево</li>
+                  <li><span class="key">→</span> — перемещение вправо</li>
+                </ul>
+              </div>
+              <p class="controls-note">
+                Белка стоит в четырёх позициях: слева / справа и выше / ниже.
+                После трёх пропущенных шишек игра заканчивается, а скорость
+                постепенно растёт.
+              </p>
+            </div>
+            <button type="button" id="start-btn">Начать игру</button>
+          </div>
+        </section>
+
+        <section class="overlay hidden" id="gameover-screen">
+          <div class="panel">
+            <p class="eyebrow">Игра окончена</p>
+            <h1>Запасы на зиму</h1>
+            <p class="lead" id="gameover-text"></p>
+            <button type="button" id="retry-btn">Играть снова</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

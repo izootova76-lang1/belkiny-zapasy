@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="640">
+      <stop offset="0%" stop-color="#f4e2b8"/>
+      <stop offset="40%" stop-color="#ebc07a"/>
+      <stop offset="75%" stop-color="#d8884c"/>
+      <stop offset="100%" stop-color="#b45a32"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="18%" r="38%">
+      <stop offset="0%" stop-color="#fff4c8" stop-opacity=".88"/>
+      <stop offset="45%" stop-color="#ffd27a" stop-opacity=".32"/>
+      <stop offset="100%" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barkL" x1="0" y1="0" x2="80" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3a2414"/>
+      <stop offset="45%" stop-color="#6b4328"/>
+      <stop offset="100%" stop-color="#4a2c16"/>
+    </linearGradient>
+    <linearGradient id="barkR" x1="880" y1="0" x2="980" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4a2c16"/>
+      <stop offset="55%" stop-color="#6b4328"/>
+      <stop offset="100%" stop-color="#3a2414"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8eaa68"/>
+      <stop offset="100%" stop-color="#6d8750"/>
+    </linearGradient>
+    <linearGradient id="hillMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a9a54"/>
+      <stop offset="100%" stop-color="#58743c"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="500" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c9a52"/>
+      <stop offset="100%" stop-color="#4e6230"/>
+    </linearGradient>
+    <g id="tuftA">
+      <path d="M1 2C-2 0 -4 4 -2 7C2 5 4 3 1 2Z" fill="#6b4324"/>
+      <path d="M-2 1C-10 -14 -28 -16 -42 -4C-48 6 -40 16 -24 14C-34 24 -14 24 0 14C10 18 14 6 8 -2C6 -8 2 -2 -2 1Z" fill="#1f5236"/>
+      <path d="M-6 -2C-16 -12 -30 -10 -38 -2C-28 2 -14 6 -4 4Z" fill="#4a8c52"/>
+      <path d="M-36 -6C-42 -12 -36 -16 -30 -8Z" fill="#1f5236"/>
+      <path d="M-42 4C-50 2 -48 12 -40 10Z" fill="#1f5236"/>
+    </g>
+    <g id="tuftB">
+      <path d="M1 1C-2 -1 -5 3 -3 6C1 4 4 2 1 1Z" fill="#6b4324"/>
+      <path d="M-1 0C-12 -10 -30 -6 -40 8C-44 16 -32 20 -18 14C-24 24 -8 20 4 12C12 14 14 4 8 -4C4 -8 4 -2 -1 0Z" fill="#2a6340"/>
+      <path d="M-4 -1C-14 -8 -26 -4 -32 4C-20 6 -10 6 -2 3Z" fill="#5a944c"/>
+      <path d="M-34 8C-40 14 -32 18 -28 12Z" fill="#2a6340"/>
+    </g>
+    <g id="bunch">
+      <path d="M1 0C-2 -1 -4 2 -2 4C1 3 3 1 1 0Z" fill="#6b4324"/>
+      <path d="M0 1L-7 -7L-13 -3L-20 -11L-27 -5L-36 -10L-44 -2L-40 6L-31 3L-26 11L-18 5L-11 9L-4 3Z" fill="#1e4d34"/>
+      <path d="M-2 0L-10 -5L-18 -2L-26 -7L-34 -2L-30 3L-22 1L-14 4L-6 1Z" fill="#4a8a4e"/>
+      <path d="M-20 -9L-24 -14L-26 -8Z" fill="#1e4d34"/>
+      <path d="M-34 -8L-39 -13L-40 -6Z" fill="#1e4d34"/>
+      <path d="M-24 9L-28 14L-20 10Z" fill="#1e4d34"/>
+    </g>
+    <g id="farPine" fill="#3d5c32">
+      <path d="M0 4C-10 14 -18 24 -22 36C-8 32 8 32 22 36C18 24 10 14 0 4Z"/>
+      <path d="M0 22C-14 34 -24 46 -28 58C-10 52 10 52 28 58C24 46 14 34 0 22Z"/>
+    </g>
+  </defs>
+
+  <rect width="960" height="640" fill="url(#sky)"/>
+  <rect width="960" height="640" fill="url(#sun)"/>
+  <path d="M220 86c50 8 86-16 140-4" stroke="#fff7dc" stroke-width="14" stroke-linecap="round" opacity=".24"/>
+  <path d="M400 70c40 8 70-12 110-2" stroke="#fff7dc" stroke-width="12" stroke-linecap="round" opacity=".18"/>
+
+  <g opacity=".38">
+    <use href="#farPine" transform="translate(250 250) scale(1.6)"/>
+    <use href="#farPine" transform="translate(310 262) scale(1.2)"/>
+    <use href="#farPine" transform="translate(360 246) scale(1.7)"/>
+    <use href="#farPine" transform="translate(430 258) scale(1.15)"/>
+    <use href="#farPine" transform="translate(500 250) scale(1.5)"/>
+    <use href="#farPine" transform="translate(560 264) scale(1.2)"/>
+    <use href="#farPine" transform="translate(620 248) scale(1.55)"/>
+  </g>
+
+  <path d="M0 360c90-48 170-22 270-54 110-34 180 18 300 2 100-14 170-62 250-28 70 28 100 16 140 28v140H0Z" fill="url(#hillFar)"/>
+  <path d="M0 418c110-44 210-16 320-48 120-34 200 20 330 4 90-12 150-46 210-16 40 18 70 10 100 18v144H0Z" fill="url(#hillMid)"/>
+  <path d="M0 508c130-24 240 12 360-16 130-30 220 18 360 4 90-10 160-28 240 16v128H0Z" fill="url(#floor)"/>
+  <path d="M0 560c90-14 180 10 280-8 140-24 230 16 360 2 100-10 170-22 320 18v68H0Z" fill="#5a7038" opacity=".5"/>
+
+  <!-- LEFT giant spruce, mostly off-screen -->
+  <g id="leftSpruce">
+    <path d="M-40 -40C10 -20 40 40 48 140C58 280 62 430 70 640L-40 640Z" fill="url(#barkL)"/>
+    <path d="M8 40C14 180 18 360 22 620" stroke="#2a180c" stroke-width="7" opacity=".35" stroke-linecap="round"/>
+    <path d="M28 80C34 220 36 400 40 600" stroke="#8a5a32" stroke-width="5" opacity=".28" stroke-linecap="round"/>
+    <path d="M12 260C6 280 8 300 18 312C28 300 26 274 12 260Z" fill="#3a2414" opacity=".45"/>
+
+    <g opacity=".95">
+      <path d="M-90 20C-10 -30 70 -10 130 40C80 20 20 30 -20 70C-50 40 -80 40 -90 20Z" fill="#163a28"/>
+      <path d="M-100 90C-20 40 90 50 170 110C110 80 40 90 -10 140C-50 110 -90 110 -100 90Z" fill="#1d4a32"/>
+      <path d="M-110 170C-10 110 110 130 190 200C120 160 40 170 -20 230C-60 190 -100 190 -110 170Z" fill="#24583a"/>
+      <path d="M-100 250C0 200 120 220 200 290C130 250 40 260 -10 320C-50 280 -90 280 -100 250Z" fill="#1c4a32"/>
+      <path d="M-110 340C-10 280 130 310 210 380C140 330 40 350 -20 410C-60 370 -100 370 -110 340Z" fill="#24603c"/>
+      <path d="M-90 430C10 380 130 410 200 480C130 430 40 450 -10 510C-50 470 -80 460 -90 430Z" fill="#1a4a32"/>
+      <path d="M-80 520C20 480 120 510 180 570C120 530 40 540 0 590C-40 550 -70 540 -80 520Z" fill="#215634"/>
+    </g>
+
+    <g>
+      <use href="#tuftA" transform="translate(70 70) rotate(8) scale(1.15)"/>
+      <use href="#tuftB" transform="translate(110 95) rotate(18) scale(1.05)"/>
+      <use href="#tuftA" transform="translate(80 130) rotate(12) scale(1.2)"/>
+      <use href="#tuftC" transform="translate(130 155) rotate(22) scale(1)"/>
+      <use href="#tuftB" transform="translate(60 175) rotate(6) scale(1.25)"/>
+      <use href="#tuftA" transform="translate(115 200) rotate(16) scale(1.1)"/>
+      <use href="#tuftC" transform="translate(85 235) rotate(10) scale(1.15)"/>
+      <use href="#tuftB" transform="translate(140 255) rotate(24) scale(.95)"/>
+      <use href="#tuftA" transform="translate(70 290) rotate(8) scale(1.2)"/>
+      <use href="#tuftB" transform="translate(125 320) rotate(18) scale(1.05)"/>
+      <use href="#tuftA" transform="translate(90 355) rotate(12) scale(1.15)"/>
+      <use href="#tuftC" transform="translate(145 385) rotate(20) scale(1)"/>
+      <use href="#tuftB" transform="translate(75 420) rotate(7) scale(1.15)"/>
+      <use href="#tuftA" transform="translate(120 450) rotate(16) scale(1.05)"/>
+      <use href="#tuftC" transform="translate(85 490) rotate(11) scale(1.1)"/>
+      <use href="#tuftB" transform="translate(130 525) rotate(19) scale(.95)"/>
+      <use href="#tuftA" transform="translate(70 555) rotate(8) scale(1.15)"/>
+      <use href="#tuftC" transform="translate(40 100) rotate(-8) scale(1.1)"/>
+      <use href="#tuftB" transform="translate(30 220) rotate(-12) scale(1.2)"/>
+      <use href="#tuftA" transform="translate(35 360) rotate(-6) scale(1.15)"/>
+      <use href="#tuftC" transform="translate(28 500) rotate(-10) scale(1.05)"/>
+    </g>
+  </g>
+
+  <!-- RIGHT giant spruce -->
+  <g id="rightSpruce">
+    <path d="M1000 -40C950 -20 920 40 912 140C902 280 898 430 890 640L1000 640Z" fill="url(#barkR)"/>
+    <path d="M952 40C946 180 942 360 938 620" stroke="#2a180c" stroke-width="7" opacity=".35" stroke-linecap="round"/>
+    <path d="M932 80C926 220 924 400 920 600" stroke="#8a5a32" stroke-width="5" opacity=".28" stroke-linecap="round"/>
+
+    <g opacity=".95">
+      <path d="M1050 20C970 -30 890 -10 830 40C880 20 940 30 980 70C1010 40 1040 40 1050 20Z" fill="#163a28"/>
+      <path d="M1060 90C980 40 870 50 790 110C850 80 920 90 970 140C1010 110 1050 110 1060 90Z" fill="#1d4a32"/>
+      <path d="M1070 170C970 110 850 130 770 200C840 160 920 170 980 230C1020 190 1060 190 1070 170Z" fill="#24583a"/>
+      <path d="M1060 250C960 200 840 220 760 290C830 250 920 260 970 320C1010 280 1050 280 1060 250Z" fill="#1c4a32"/>
+      <path d="M1070 340C970 280 830 310 750 380C820 330 920 350 980 410C1020 370 1060 370 1070 340Z" fill="#24603c"/>
+      <path d="M1050 430C950 380 830 410 760 480C830 430 920 450 970 510C1010 470 1040 460 1050 430Z" fill="#1a4a32"/>
+      <path d="M1040 520C940 480 840 510 780 570C840 530 920 540 960 590C1000 550 1030 540 1040 520Z" fill="#215634"/>
+    </g>
+
+    <g>
+      <use href="#tuftA" transform="translate(890 70) rotate(172) scale(1.15)"/>
+      <use href="#tuftB" transform="translate(850 95) rotate(162) scale(1.05)"/>
+      <use href="#tuftA" transform="translate(880 130) rotate(168) scale(1.2)"/>
+      <use href="#tuftC" transform="translate(830 155) rotate(158) scale(1)"/>
+      <use href="#tuftB" transform="translate(900 175) rotate(174) scale(1.25)"/>
+      <use href="#tuftA" transform="translate(845 200) rotate(164) scale(1.1)"/>
+      <use href="#tuftC" transform="translate(875 235) rotate(170) scale(1.15)"/>
+      <use href="#tuftB" transform="translate(820 255) rotate(156) scale(.95)"/>
+      <use href="#tuftA" transform="translate(890 290) rotate(172) scale(1.2)"/>
+      <use href="#tuftB" transform="translate(835 320) rotate(162) scale(1.05)"/>
+      <use href="#tuftA" transform="translate(870 355) rotate(168) scale(1.15)"/>
+      <use href="#tuftC" transform="translate(815 385) rotate(160) scale(1)"/>
+      <use href="#tuftB" transform="translate(885 420) rotate(173) scale(1.15)"/>
+      <use href="#tuftA" transform="translate(840 450) rotate(164) scale(1.05)"/>
+      <use href="#tuftC" transform="translate(875 490) rotate(169) scale(1.1)"/>
+      <use href="#tuftB" transform="translate(830 525) rotate(161) scale(.95)"/>
+      <use href="#tuftA" transform="translate(890 555) rotate(172) scale(1.15)"/>
+      <use href="#tuftC" transform="translate(920 100) rotate(188) scale(1.1)"/>
+      <use href="#tuftB" transform="translate(930 220) rotate(192) scale(1.2)"/>
+      <use href="#tuftA" transform="translate(925 360) rotate(186) scale(1.15)"/>
+      <use href="#tuftC" transform="translate(932 500) rotate(190) scale(1.05)"/>
+    </g>
+  </g>
+
+  <!-- four unique spruce branches: wood visible, sparse tufts, side twigs -->
+  <g id="playBranches" stroke-linecap="round" stroke-linejoin="round">
+    <!-- LEFT UPPER: drooping paw, shoots mostly upward -->
+    <g>
+      <path d="M58 142C104 168 146 192 188 226C216 248 232 276 248 302" stroke="#5a3518" stroke-width="16"/>
+      <path d="M188 226C228 272 292 336 348 392" stroke="#5a3518" stroke-width="8"/>
+      <path d="M300 348C326 372 348 392 356 412" stroke="#5a3518" stroke-width="4.3"/>
+      <path d="M64 140C108 166 148 190 190 224" stroke="#8a5a32" stroke-width="5" opacity=".42"/>
+      <path d="M132 184C118 158 104 146 82 136" stroke="#5a3518" stroke-width="4.5"/>
+      <path d="M176 216C168 196 162 184 154 170" stroke="#5a3518" stroke-width="3.2"/>
+      <path d="M228 268C248 248 268 238 292 232" stroke="#5a3518" stroke-width="3.4"/>
+      <path d="M268 312C258 328 246 338 228 346" stroke="#5a3518" stroke-width="2.8"/>
+      <use href="#bunch" transform="translate(88 140) rotate(-8) scale(1.15)"/>
+      <use href="#bunch" transform="translate(118 158) rotate(18) scale(1.05)"/>
+      <use href="#bunch" transform="translate(156 172) rotate(-28) scale(.88)"/>
+      <use href="#bunch" transform="translate(176 216) rotate(32) scale(.95)"/>
+      <use href="#bunch" transform="translate(292 234) rotate(-12) scale(.82)"/>
+      <use href="#bunch" transform="translate(230 344) rotate(78) scale(.7)"/>
+      <use href="#bunch" transform="translate(334 374) rotate(38) scale(.62)"/>
+    </g>
+
+    <!-- LEFT LOWER: heavier, hanging shoots -->
+    <g>
+      <path d="M52 322C98 344 146 366 186 402C216 428 234 456 252 484" stroke="#4e2e14" stroke-width="17"/>
+      <path d="M186 402C234 446 298 498 348 528" stroke="#4e2e14" stroke-width="9"/>
+      <path d="M300 496C324 514 348 528 356 544" stroke="#4e2e14" stroke-width="4.8"/>
+      <path d="M60 320C104 342 148 364 188 400" stroke="#7a4a28" stroke-width="5" opacity=".4"/>
+      <path d="M120 352C104 374 86 392 64 402" stroke="#4e2e14" stroke-width="4.8"/>
+      <path d="M158 382C148 402 134 416 114 426" stroke="#4e2e14" stroke-width="3.4"/>
+      <path d="M210 424C196 444 178 458 156 466" stroke="#4e2e14" stroke-width="3.2"/>
+      <path d="M276 472C292 456 310 448 328 444" stroke="#4e2e14" stroke-width="2.9"/>
+      <use href="#bunch" transform="translate(102 344) rotate(12) scale(1.18)"/>
+      <use href="#bunch" transform="translate(70 400) rotate(84) scale(1.02)"/>
+      <use href="#bunch" transform="translate(118 424) rotate(96) scale(.78)"/>
+      <use href="#bunch" transform="translate(164 396) rotate(28) scale(.9)"/>
+      <use href="#bunch" transform="translate(158 464) rotate(108) scale(.74)"/>
+      <use href="#bunch" transform="translate(326 446) rotate(-14) scale(.68)"/>
+      <use href="#bunch" transform="translate(330 518) rotate(32) scale(.6)"/>
+    </g>
+
+    <!-- RIGHT UPPER: airier, more wood, fewer bunches -->
+    <g>
+      <path d="M902 140C854 168 810 194 770 228C742 252 726 278 704 304" stroke="#623818" stroke-width="15"/>
+      <path d="M770 228C724 276 662 340 612 392" stroke="#623818" stroke-width="7.5"/>
+      <path d="M658 350C634 374 612 392 604 412" stroke="#623818" stroke-width="4.2"/>
+      <path d="M894 142C850 166 812 192 772 226" stroke="#9a6840" stroke-width="4.6" opacity=".4"/>
+      <path d="M828 180C846 154 866 140 892 132" stroke="#623818" stroke-width="4"/>
+      <path d="M786 216C796 196 806 180 818 166" stroke="#623818" stroke-width="3"/>
+      <path d="M698 298C676 276 662 256 656 236" stroke="#623818" stroke-width="3.1"/>
+      <use href="#bunch" transform="translate(872 136) rotate(198) scale(1.08)"/>
+      <use href="#bunch" transform="translate(848 156) rotate(160) scale(.98)"/>
+      <use href="#bunch" transform="translate(816 168) rotate(212) scale(.8)"/>
+      <use href="#bunch" transform="translate(744 246) rotate(138) scale(.92)"/>
+      <use href="#bunch" transform="translate(658 238) rotate(112) scale(.7)"/>
+      <use href="#bunch" transform="translate(622 376) rotate(144) scale(.62)"/>
+    </g>
+
+    <!-- RIGHT LOWER: extra side shoots, bunches clustered mid-branch -->
+    <g>
+      <path d="M908 326C858 350 810 372 770 406C740 432 722 460 700 486" stroke="#543016" stroke-width="16.5"/>
+      <path d="M770 406C722 450 658 500 612 528" stroke="#543016" stroke-width="8.4"/>
+      <path d="M660 496C636 514 612 528 604 544" stroke="#543016" stroke-width="4.6"/>
+      <path d="M900 324C854 348 812 370 772 404" stroke="#8a542c" stroke-width="5" opacity=".38"/>
+      <path d="M840 358C858 380 876 394 900 402" stroke="#543016" stroke-width="4.4"/>
+      <path d="M798 390C812 372 830 360 850 354" stroke="#543016" stroke-width="3.3"/>
+      <path d="M736 430C720 412 708 394 702 374" stroke="#543016" stroke-width="3"/>
+      <path d="M680 478C664 462 652 446 646 428" stroke="#543016" stroke-width="2.8"/>
+      <use href="#bunch" transform="translate(854 348) rotate(172) scale(1.12)"/>
+      <use href="#bunch" transform="translate(896 400) rotate(252) scale(.9)"/>
+      <use href="#bunch" transform="translate(848 356) rotate(-18) scale(.72)"/>
+      <use href="#bunch" transform="translate(770 402) rotate(148) scale(.95)"/>
+      <use href="#bunch" transform="translate(704 376) rotate(108) scale(.68)"/>
+      <use href="#bunch" transform="translate(648 430) rotate(96) scale(.64)"/>
+      <use href="#bunch" transform="translate(618 520) rotate(148) scale(.58)"/>
+    </g>
+  </g>
+
+  <ellipse cx="355" cy="436" rx="40" ry="13" fill="#4f6d34" opacity=".8"/>
+  <ellipse cx="355" cy="566" rx="40" ry="13" fill="#4f6d34" opacity=".8"/>
+  <ellipse cx="605" cy="436" rx="40" ry="13" fill="#4f6d34" opacity=".8"/>
+  <ellipse cx="605" cy="566" rx="40" ry="13" fill="#4f6d34" opacity=".8"/>
+
+  <path d="M-30 610c24-60 80-78 130-50 28-40 90-48 130-8 24-24 70-16 90 18v70H-30Z" fill="#456332"/>
+  <path d="M30 600c16-26 48-34 72-12 18-22 56-26 78 0 12-14 40-12 52 10v42H30Z" fill="#5f7f3c"/>
+  <path d="M770 612c24-62 90-80 150-48 30-36 90-44 140-6 18-18 56-14 80 16v66H770Z" fill="#456332"/>
+  <path d="M820 598c16-24 50-32 74-10 20-20 58-24 80 2 10-12 36-10 48 10v40H820Z" fill="#5f7f3c"/>
+
+  <g transform="translate(200 552)">
+    <path d="M10 30c0-6 4-10 10-10s10 4 10 10" fill="#f0d9b0"/>
+    <path d="M3 20C3 9 12 2 20 2s17 7 17 18H3Z" fill="#d4543a"/>
+    <circle cx="12" cy="12" r="2.2" fill="#f3e0c8"/>
+    <circle cx="24" cy="10" r="1.7" fill="#f3e0c8"/>
+  </g>
+  <g transform="translate(724 558) scale(.86)">
+    <path d="M10 30c0-6 4-10 10-10s10 4 10 10" fill="#f0d9b0"/>
+    <path d="M3 20C3 9 12 2 20 2s17 7 17 18H3Z" fill="#d4543a"/>
+    <circle cx="12" cy="12" r="2.2" fill="#f3e0c8"/>
+    <circle cx="24" cy="10" r="1.7" fill="#f3e0c8"/>
+  </g>
+</svg>

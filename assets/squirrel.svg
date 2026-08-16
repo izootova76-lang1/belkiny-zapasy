@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="200" viewBox="0 0 180 200" fill="none">
+  <ellipse cx="96" cy="188" rx="38" ry="8" fill="#5a3a18" opacity=".22"/>
+
+  <!-- tail -->
+  <path
+    d="M78 128c-28 6-58-8-68-38-10-28 4-58 32-70 18-8 36-4 42 12 4 12-2 22-14 26 16-2 30 12 28 30-16-10-34-6-46 8 18 2 34 16 28 36-8 4-18 2-22-4Z"
+    fill="#e07a28"
+  />
+  <path
+    d="M70 120c-22 2-44-12-50-34-6-22 8-44 28-52 8 18 4 34-8 44 18 2 32 16 30 34-8-6-18-6-28-2 12 6 22 16 20 28-4 2-10 0-14-2Z"
+    fill="#f0a04a"
+    opacity=".9"
+  />
+  <path
+    d="M36 42c8-10 22-16 34-12-6 10-18 14-30 14-2-1-3-1-4-2Z"
+    fill="#f6c07a"
+  />
+  <path d="M22 78c8-4 14-2 18 4M28 98c8-2 14 2 16 8M48 52c6-4 12-4 18 0" stroke="#c45e1c" stroke-width="2.2" stroke-linecap="round" opacity=".45"/>
+  <path
+    d="M18 70c-4-2-8 2-6 8 6 4 12 2 14-2-4-2-6-4-8-6Z"
+    fill="#d86a20"
+  />
+  <path
+    d="M30 48c-4-4-10-2-10 4 4 6 12 6 14 2-2-2-3-4-4-6Z"
+    fill="#d86a20"
+  />
+  <path
+    d="M52 36c-2-6 2-10 8-10 4 6 2 12-2 14-3-1-5-2-6-4Z"
+    fill="#d86a20"
+  />
+
+  <!-- back leg -->
+  <path
+    d="M78 142c-8 10-8 28 4 36 8 4 16-2 18-12 2-12-6-24-14-28-4 0-7 1-8 4Z"
+    fill="#c65c1c"
+  />
+  <path d="M86 174c6 2 14 2 18-2" stroke="#8a3c12" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- body -->
+  <path
+    d="M86 86c22-8 48 2 56 28 6 20-2 42-22 52-18 10-40 6-50-10-12-18-8-46 16-70Z"
+    fill="#e27c2c"
+  />
+  <path
+    d="M98 104c14-4 28 6 30 20 2 16-8 28-22 32-12 4-24-2-28-14-4-14 4-32 20-38Z"
+    fill="#f6c48a"
+  />
+  <path
+    d="M84 118c8 18 16 28 32 34"
+    stroke="#c45e1c"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity=".25"
+  />
+
+  <!-- front arm holding basket -->
+  <path
+    d="M128 118c12 8 18 22 10 32-6 8-18 8-24 2-4-8 0-20 8-28 2-2 4-4 6-6Z"
+    fill="#e07a28"
+  />
+  <path
+    d="M132 146c6 4 12 4 16-2"
+    stroke="#8a3c12"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- head -->
+  <path
+    d="M108 42c18-16 44-10 54 10 10 20 2 42-18 52-22 10-46 0-54-18-6-16 2-32 18-44Z"
+    fill="#e27c2c"
+  />
+  <path
+    d="M118 62c12-6 26-2 32 10 4 12-2 24-14 28-12 4-24-2-28-12-4-10 0-20 10-26Z"
+    fill="#f3b070"
+  />
+
+  <!-- ears -->
+  <path
+    d="M112 44c-8-22 6-34 18-30 6 14-2 28-12 32-3 0-5-1-6-2Z"
+    fill="#d46820"
+  />
+  <path
+    d="M118 40c-2-10 4-16 10-14 2 8-2 16-8 18-1 0-2-2-2-4Z"
+    fill="#f4b4a0"
+  />
+  <path
+    d="M148 40c10-22 28-18 32-4 0 16-14 28-26 26-4-6-6-14-6-22Z"
+    fill="#d46820"
+  />
+  <path
+    d="M156 40c6-12 16-10 18-2-2 10-10 16-18 14 0-4 0-8 0-12Z"
+    fill="#f4b4a0"
+  />
+
+  <!-- face -->
+  <ellipse cx="128" cy="78" rx="7" ry="8.5" fill="#fff8ee"/>
+  <ellipse cx="148" cy="76" rx="6.4" ry="8" fill="#fff8ee"/>
+  <circle cx="129.5" cy="79" r="3.3" fill="#3a2416"/>
+  <circle cx="149.2" cy="77" r="3.1" fill="#3a2416"/>
+  <circle cx="128.2" cy="77.4" r="1.1" fill="#fff"/>
+  <circle cx="148" cy="75.5" r="1" fill="#fff"/>
+  <ellipse cx="122" cy="90" rx="5" ry="3.2" fill="#f09a88" opacity=".7"/>
+  <ellipse cx="154" cy="88" rx="4.6" ry="3" fill="#f09a88" opacity=".7"/>
+  <path d="M136 86c2 3 8 3 11 0" stroke="#7a3a16" stroke-width="1.4" stroke-linecap="round"/>
+  <ellipse cx="142" cy="84" rx="3.2" ry="2.4" fill="#3a2416"/>
+  <path d="M142 86c0 4-3 7-7 8" stroke="#3a2416" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M128 84l-16 2M128 88l-16 4M152 82l14 1M152 86l14 3" stroke="#5a3314" stroke-width="1.1" stroke-linecap="round"/>
+
+  <!-- tuft -->
+  <path d="M132 46c4-8 12-10 16-6-6 4-10 8-16 8Z" fill="#f0a04a"/>
+
+  <!-- front leg -->
+  <path
+    d="M102 148c2 16 8 28 20 30 10 0 14-10 12-20-4-14-16-24-26-22-3 2-5 6-6 12Z"
+    fill="#d46820"
+  />
+  <path d="M118 174c8 4 16 2 20-4" stroke="#8a3c12" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- basket -->
+  <path
+    d="M118 128c18-2 38 4 42 16 2 10-8 22-28 24-18 2-34-6-36-16-2-10 8-22 22-24Z"
+    fill="#c48a3a"
+  />
+  <path
+    d="M116 144c4 8 16 14 32 12 14-2 22-8 24-14"
+    stroke="#8a5420"
+    stroke-width="1.6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M122 136c4 6 14 10 28 8"
+    stroke="#8a5420"
+    stroke-width="1.3"
+    stroke-linecap="round"
+    opacity=".6"
+  />
+  <path
+    d="M124 126c10-16 34-16 44 2"
+    stroke="#8a5420"
+    stroke-width="3.2"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <path
+    d="M128 132h32"
+    stroke="#e8c078"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <ellipse cx="138" cy="138" rx="3" ry="2" fill="#f3d7a4" opacity=".35"/>
+</svg>
