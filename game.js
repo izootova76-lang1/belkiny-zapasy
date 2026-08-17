@@ -343,6 +343,12 @@
     requestAnimationFrame(loop);
   }
 
+  function applyMove(action) {
+    if (state.mode !== "play") return;
+    if (action === "left" || action === "right") state.side = action;
+    if (action === "up" || action === "down") state.row = action;
+  }
+
   function handleKey(event) {
     const key = event.key.toLowerCase();
     if (key === "enter" || key === " ") {
@@ -361,14 +367,38 @@
     const action = map[key];
     if (!action) return;
     event.preventDefault();
+    applyMove(action);
+  }
+
+  function pointFromPointer(event) {
+    const rect = canvas.getBoundingClientRect();
+    return {
+      x: ((event.clientX - rect.left) / rect.width) * W,
+      y: ((event.clientY - rect.top) / rect.height) * H,
+    };
+  }
+
+  function handleCanvasPointer(event) {
     if (state.mode !== "play") return;
-    if (action === "left" || action === "right") state.side = action;
-    if (action === "up" || action === "down") state.row = action;
+    event.preventDefault();
+    const p = pointFromPointer(event);
+    applyMove(p.x < W / 2 ? "left" : "right");
+    applyMove(p.y < 480 ? "up" : "down");
+  }
+
+  function handlePadPointer(event) {
+    const btn = event.target.closest("[data-move]");
+    if (!btn) return;
+    event.preventDefault();
+    applyMove(btn.dataset.move);
   }
 
   document.getElementById("start-btn").addEventListener("click", startGame);
   document.getElementById("retry-btn").addEventListener("click", startGame);
   window.addEventListener("keydown", handleKey);
+  canvas.addEventListener("pointerdown", handleCanvasPointer);
+  document.getElementById("touch-pad").addEventListener("pointerdown", handlePadPointer);
+  window.addEventListener("resize", setupCanvas);
 
   setupCanvas();
   createLeaves();

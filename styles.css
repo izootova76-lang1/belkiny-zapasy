@@ -15,6 +15,7 @@ html,
 body {
   margin: 0;
   min-height: 100%;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at 18% 8%, #ffe7b0 0, transparent 28%),
     linear-gradient(180deg, #e8b56a 0%, #c56e38 48%, #6e3a1c 100%);
@@ -134,7 +135,7 @@ canvas {
   pointer-events: none;
 }
 
-.hint p {
+.hint-text {
   margin: 0;
   padding: 8px 16px;
   border-radius: 999px;
@@ -145,9 +146,34 @@ canvas {
   box-shadow: 0 6px 14px var(--shadow);
 }
 
+.hint-touch {
+  display: none;
+}
+
 .play-keys {
   display: flex;
   gap: 8px;
+}
+
+.touch-key[data-move="left"] {
+  order: 1;
+}
+
+.touch-key[data-move="down"] {
+  order: 2;
+}
+
+.touch-key[data-move="up"] {
+  order: 3;
+}
+
+.touch-key[data-move="right"] {
+  order: 4;
+}
+
+.touch-key {
+  pointer-events: auto;
+  touch-action: manipulation;
 }
 
 .overlay {
@@ -289,4 +315,193 @@ button:hover {
 button:active {
   transform: translateY(2px);
   box-shadow: 0 4px 0 #8a3a12;
+}
+
+@media (max-width: 720px) {
+  .app {
+    min-height: 100dvh;
+    padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right))
+      max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+    align-items: stretch;
+  }
+
+  .stage {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    aspect-ratio: auto;
+    min-height: calc(100dvh - 16px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    box-shadow:
+      0 12px 28px var(--shadow),
+      0 0 0 3px #e8c48a,
+      0 0 0 7px #8a4a24;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 960 / 640;
+    flex: 0 0 auto;
+    touch-action: none;
+  }
+
+  .hud {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .hud-center {
+    order: -1;
+    flex: 1 1 100%;
+  }
+
+  .scene-title {
+    font-size: clamp(18px, 5.4vw, 26px);
+  }
+
+  .scene-tagline {
+    display: none;
+  }
+
+  .hud-card {
+    min-width: 0;
+    flex: 1;
+    padding: 6px 12px 8px;
+  }
+
+  .hud-value {
+    font-size: 24px;
+  }
+
+  .hint {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin-top: auto;
+    padding: 10px 10px 12px;
+    pointer-events: auto;
+    width: 100%;
+  }
+
+  .hint-text {
+    display: none;
+  }
+
+  .hint-touch {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .play-keys {
+    display: grid;
+    grid-template-columns: 64px 64px 64px;
+    grid-template-rows: 64px 64px;
+    gap: 10px;
+    justify-content: center;
+    width: min(220px, 100%);
+    margin: 0 auto;
+  }
+
+  .touch-key {
+    order: 0;
+    min-width: 64px;
+    height: 64px;
+    font-size: 26px;
+    box-shadow: 0 4px 0 #c49252;
+  }
+
+  .touch-key[data-move="up"] {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .touch-key[data-move="left"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .touch-key[data-move="down"] {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .touch-key[data-move="right"] {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .overlay {
+    padding: 12px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    align-items: start;
+  }
+
+  .panel {
+    padding: 18px 16px 16px;
+    border-radius: 20px;
+    margin: auto 0;
+  }
+
+  .panel h1 {
+    font-size: clamp(26px, 8vw, 34px);
+  }
+
+  .lead {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .keys {
+    flex-direction: column;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .arrow-legend {
+    font-size: 15px;
+  }
+
+  .arrow-legend .key,
+  .key {
+    min-width: 44px;
+    height: 44px;
+  }
+
+  .controls-note {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    min-height: 52px;
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 700px) {
+  .app {
+    padding: 6px;
+    min-height: 100dvh;
+  }
+
+  .stage {
+    width: min(960px, 100%, calc((100dvh - 12px) * 960 / 640));
+    max-height: calc(100dvh - 12px);
+  }
+
+  .scene-tagline {
+    display: none;
+  }
 }

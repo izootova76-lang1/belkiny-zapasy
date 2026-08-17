@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <title>Белкины запасы</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,12 +40,13 @@
         </div>
 
         <div class="hint" id="hint" hidden>
-          <p>Стрелки — перемещайте белку и подставляйте корзинку</p>
-          <div class="play-keys">
-            <span class="key">←</span>
-            <span class="key">↓</span>
-            <span class="key">↑</span>
-            <span class="key">→</span>
+          <p class="hint-text">Стрелки — перемещайте белку и подставляйте корзинку</p>
+          <p class="hint-text hint-touch">Нажимайте стрелки или игровое поле</p>
+          <div class="play-keys" id="touch-pad">
+            <button type="button" class="key touch-key" data-move="up" aria-label="Вверх">↑</button>
+            <button type="button" class="key touch-key" data-move="left" aria-label="Влево">←</button>
+            <button type="button" class="key touch-key" data-move="down" aria-label="Вниз">↓</button>
+            <button type="button" class="key touch-key" data-move="right" aria-label="Вправо">→</button>
           </div>
         </div>
 
