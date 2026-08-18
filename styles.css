@@ -281,12 +281,37 @@ canvas {
   place-items: center;
   min-width: 36px;
   height: 36px;
-  padding: 0 8px;
+  padding: 0;
   border-radius: 10px;
   background: #fffaf0;
   border: 2px solid #c49252;
   font-weight: 900;
+  line-height: 0;
+  color: #4a2814;
   box-shadow: 0 3px 0 #c49252;
+}
+
+.arrow-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: #4a2814;
+  pointer-events: none;
+}
+
+.key[data-move="left"] .arrow-icon,
+.key.dir-left .arrow-icon {
+  transform: rotate(-90deg);
+}
+
+.key[data-move="right"] .arrow-icon,
+.key.dir-right .arrow-icon {
+  transform: rotate(90deg);
+}
+
+.key[data-move="down"] .arrow-icon,
+.key.dir-down .arrow-icon {
+  transform: rotate(180deg);
 }
 
 .controls-note {
@@ -416,6 +441,11 @@ button:active {
     height: 64px;
     font-size: 26px;
     box-shadow: 0 4px 0 #c49252;
+  }
+
+  .touch-key .arrow-icon {
+    width: 28px;
+    height: 28px;
   }
 
   .touch-key[data-move="up"] {

@@ -43,10 +43,26 @@
           <p class="hint-text">Стрелки — перемещайте белку и подставляйте корзинку</p>
           <p class="hint-text hint-touch">Нажимайте стрелки или игровое поле</p>
           <div class="play-keys" id="touch-pad">
-            <button type="button" class="key touch-key" data-move="up" aria-label="Вверх">↑</button>
-            <button type="button" class="key touch-key" data-move="left" aria-label="Влево">←</button>
-            <button type="button" class="key touch-key" data-move="down" aria-label="Вниз">↓</button>
-            <button type="button" class="key touch-key" data-move="right" aria-label="Вправо">→</button>
+            <button type="button" class="key touch-key" data-move="up" aria-label="Вверх">
+              <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/>
+              </svg>
+            </button>
+            <button type="button" class="key touch-key" data-move="left" aria-label="Влево">
+              <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/>
+              </svg>
+            </button>
+            <button type="button" class="key touch-key" data-move="down" aria-label="Вниз">
+              <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/>
+              </svg>
+            </button>
+            <button type="button" class="key touch-key" data-move="right" aria-label="Вправо">
+              <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/>
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -62,18 +78,18 @@
               <p class="controls-title">Управление</p>
               <div class="keys">
                 <div class="arrows">
-                  <span class="key">↑</span>
+                  <span class="key dir-up" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span>
                   <div class="arrow-row">
-                    <span class="key">←</span>
-                    <span class="key">↓</span>
-                    <span class="key">→</span>
+                    <span class="key dir-left" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span>
+                    <span class="key dir-down" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span>
+                    <span class="key dir-right" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span>
                   </div>
                 </div>
                 <ul class="arrow-legend">
-                  <li><span class="key">↑</span> — перемещение вверх</li>
-                  <li><span class="key">↓</span> — перемещение вниз</li>
-                  <li><span class="key">←</span> — перемещение влево</li>
-                  <li><span class="key">→</span> — перемещение вправо</li>
+                  <li><span class="key dir-up" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span> — перемещение вверх</li>
+                  <li><span class="key dir-down" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span> — перемещение вниз</li>
+                  <li><span class="key dir-left" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span> — перемещение влево</li>
+                  <li><span class="key dir-right" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" focusable="false"><path d="M12 3.2 21.2 15h-5.3v6.4H8.1V15H2.8L12 3.2z"/></svg></span> — перемещение вправо</li>
                 </ul>
               </div>
               <p class="controls-note">
